@@ -1,0 +1,45 @@
+
+<div class="container merchants">
+  <h2>Merchants</h2>
+
+  <form class="merchants--form" action="/merchants_and_tags/new_merchant" method="post">
+    <label for="add-merchant">Add Merchant</label>
+    <input type="text" id="add-merchant" name="name" placeholder="Enter Merchant Here" required>
+    <input type="submit" value="Enter">
+  </form>
+
+  <div class="merchants_container__list">
+    <% for merchant in @merchants %>
+    <div class="merchantsbox">
+      <p><%= merchant.name %></p>
+      <img src="https://www.google.com/s2/favicons?domain=www.<%= merchant.name.delete(' ') %>.co.uk" />
+      <button type="button">
+        <a href="/merchants_and_tags/merchant/<%= merchant.id %>">Edit</a>
+      </button>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="container tags">
+  <h2>Tags</h2>
+
+  <form class="tags--form" action="/merchants_and_tags/new_tag" method="post">
+    <label for="add-tag">Add Tag</label>
+    <input type="text" id="add-tag" name="name" placeholder="Enter Tag Here" required>
+      <input name="color" type="color" value="#111111">
+    <input type="submit" value="Enter">
+  </form>
+
+  <div class="tags_container__list">
+    <% for tag in @tags %>
+    <div class="tags--box" style="color:<%= tag.color%>;">
+      <p><%= tag.name %></p>
+      <button type="button">
+        <a href="/merchants_and_tags/tag/<%= tag.id %>">Edit</a>
+      </button>
+    </div>
+    <% end %>
+
+  </div>
+</div>

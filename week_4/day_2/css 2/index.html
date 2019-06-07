@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeClan defaults</title>
+	<link rel="stylesheet" type="text/css" href="cc.css" media="screen">
+</head>
+<body>
+	<h1 id="titleHead">Default CodeClan stylesheet</h1>
+	<h1>This is normal heading level 1</h1>
+	<h2>This is heading level 2</h2>
+	<h3>This is heading level 3</h3>
+	<h4>This is heading level 4</h4>
+	<h5>This is heading level 5</h5>
+	<h6>This is heading level 6</h6>
+	<hr>
+	<h2>Paragraphs</h2>
+	<p>This is the default paragraph styling. You really don't need to use heading level 5 or 6, by the way. If you do, then re-visit your content.</p>
+	<p>That thing above is the horizontal rule. You'd be better off using borders in CSS, but if you can't, use the rule.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. </p>
+	<blockquote>
+	And this is a blockquote: I hate musicals, really. I like Lorem Ipsum way more! &mdash; Wojtek
+	</blockquote>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<hr>
+	<h2>Links (anchors)</h2>
+	<p>Here's a <a href="">link in the copy</a> of one paragraph. You can also see what <a href="">a visited link looks like</a>, and of course the active one (just hover).</p>
+	<hr>
+	<h2>Lists</h2>
+	<h3>Ordered list</h3>
+	<ol>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ol>
+	<h3>Unordered list</h3>
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>	
+	<hr>
+	<h2>Tables</h2>
+	<h3>Without a caption</h3>
+	<table>
+		<tr>
+			<th>Column 1</th>
+			<th>Column 2</th>
+			<th>Column 3</th>
+		</tr>
+		<tr>
+			<td>Row 1</td>
+			<td>Row 2</td>
+			<td>Row 3</td>
+		</tr>
+		<tr>
+			<td>Row 4</td>
+			<td>Row 5</td>
+			<td>Row 6</td>
+		</tr>
+	</table>
+	<h3>With a caption</h3>
+		<table>
+		<caption>A table as god intended</caption>
+		<tr>
+			<th>Column 1</th>
+			<th>Column 2</th>
+			<th>Column 3</th>
+		</tr>
+		<tr>
+			<td>Row 1</td>
+			<td>Row 2</td>
+			<td>Row 3</td>
+		</tr>
+		<tr>
+			<td>Row 4</td>
+			<td>Row 5</td>
+			<td>Row 6</td>
+		</tr>
+	</table>
+	<hr>
+	<h2>Forms</h2>
+	<p><strong>Always include the set of label/input in a div. It will wrap it.</strong></p>
+	<form>
+		<fieldset>
+			<legend>Your details</legend>
+			<div>
+				<label for="yourName">Your name</label>
+				<input type="text" id="yourName" name="yourName" value="Joanne" />
+			</div>
+			<div>
+				<label for="yourSurname">Your surname</label>
+				<input type="text" id="yourSurname" name="yourSurname" value="Smith" />
+			</div>
+			<div>
+				<label for="yourEmail">Your email address</label>
+				<input type="email" id="yourEmail" name="yourEmail" value="test@example.com" />
+			</div>
+			<div>
+				<label for="yourCV">Your CV</label>
+				<input type="file" id="yourCV" name="yourCV" />
+			</div>
+			<div>
+				<label for="yourMessage">Your Message</label>
+				<textarea id="yourMessage" name="yourMessage" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius, aliquid consequatur vitae labore totam, veritatis commodi iusto molestiae. Modi numquam consequuntur nobis cupiditate, aliquid ratione. Odio, quasi cumque aliquam.</textarea>
+			</div>
+			<button>Button</button>
+		</fieldset>	
+		<fieldset>
+			<legend>Your options</legend>
+			<div>
+				<label for="yourOption">Choose an option</label>
+				<select id="yourOption">
+					<option>Best option</option>
+					<option>Crappiest option</option>
+				</select>
+			</div>
+			<div>
+				<label for="dateBox">Date</label>
+				<input type="date" id="dateBox" />
+			</div>
+			<div>
+				<label for="yourChoice">Your choice</label>
+				<input type="checkbox" id="yourChoice" name="yourChoice" value="1" />
+			</div>
+			<div>
+				<label for="yourChoice2">Your choice</label>
+				<input type="radio" id="yourChoice2" name="yourChoice" value="1" />
+			</div>
+			<div>
+				<label for="yourNumber">Some Number</label>
+				<input type="number" id="yourNumber" name="yourNumber" value="1" />
+			</div>
+		</fieldset>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

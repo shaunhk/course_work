@@ -1,0 +1,63 @@
+/* Contains styling for all nav and header elements */
+header, nav {
+  font-family: 'Dosis', sans-serif;
+  background-color: #E4F4D2;
+
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+}
+
+/* Header elements */
+header {
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 0.5em;
+  font-weight: bold;
+    background-image: linear-gradient(to top, #e4f4d290, #c5f1d890, #aaece690, #9be3f690, #a3d7ff90);
+  color: #D8B800;
+  background-color: #E4F4D2;
+   text-shadow: 0.07em 0.05em #58355E;
+
+  padding: 0.2em 0;
+  top: 0;
+}
+
+
+/* Navigation Elements */
+nav {
+  padding-top: 0.4em;
+  padding-bottom: 0.8em;
+  border-bottom: #D8B800 solid 0.01em;
+  top: 4.8rem;
+
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 1em;
+
+  border-style: solid;
+  border-radius: 1em;
+  border-width: 0.1em;
+  border-color: #D8B800;
+
+  padding: 0.1em 1em;
+  box-shadow: 0.1em 0.1em #58355E;
+}
+
+nav a {
+  text-transform: none;
+  text-decoration: none;
+  color: #58355E;
+}
+
+a:hover{
+  text-shadow: 0.1em 0.1em #D8B800;
+}
